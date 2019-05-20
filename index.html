@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
     <title>UberEats</title>
 </head>
 <body>
-    <
+    <header>
+        <a class="logo" href="#"><img src="img/logo.png"></a>
+        <div class="time__location">
+            <select class="time">
+                <option value="" class="asap">ASAP</option>
+                <option value="">08:00 - 12:00</option>
+                <option value="">12:00 - 18:00</option>
+                <option value="">18:00 - 23:00</option>
+            </select>
+            <p>to</p>
+            <form class="location">
+                <svg  class="location__logo" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 15.2859L11.2392 10.9636C13.5869 8.56988 13.5869 4.68495 11.2392 2.29123C8.89684 -0.0970768 5.10316 -0.0970768 2.76077 2.29123C0.413075 4.68495 0.413075 8.56988 2.76077 10.9636L7 15.2859Z" stroke="#262626"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 8.5C8.10457 8.5 9 7.60457 9 6.5C9 5.39543 8.10457 4.5 7 4.5C5.89543 4.5 5 5.39543 5 6.5C5 7.60457 5.89543 8.5 7 8.5Z" stroke="#262626"/>
+                </svg> 
+                <input type="text" class="location__inf" placeholder="Search your location">
+            </form>
+        </div>
+        <div class="autorization">
+            <a href="#" class="autorization__signin">Sign In</a>
+            <a href="#" class="autorization__register">Register</a>
+            <a href="#" class="autorization__packet"><svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9474 6.85876H0V18.6482C0 20.8574 1.79086 22.6482 4 22.6482H14.9474C17.1565 22.6482 18.9474 20.8574 18.9474 18.6482V6.85876ZM4 21.1482C2.61929 21.1482 1.5 20.029 1.5 18.6482V8.35876H17.4474V18.6482C17.4474 20.029 16.3281 21.1482 14.9474 21.1482H4Z" fill="#262626"/>
+                <path d="M6.01315 12.06V5.86806C6.01315 3.95686 7.56248 2.40753 9.47368 2.40753C11.3849 2.40753 12.9342 3.95686 12.9342 5.86806V12.06C12.9342 12.4742 13.27 12.81 13.6842 12.81C14.0984 12.81 14.4342 12.4742 14.4342 12.06V5.86806C14.4342 3.12844 12.2133 0.907532 9.47368 0.907532C6.73406 0.907532 4.51315 3.12844 4.51315 5.86806V12.06C4.51315 12.4742 4.84894 12.81 5.26315 12.81C5.67737 12.81 6.01315 12.4742 6.01315 12.06Z" fill="#262626"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <div class="body__search">
+    <svg class="search__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29999 0C12.8 0 16.5 3.60001 16.5 8.20001C16.5 10.3 15.7 12.2 14.5 13.5L22 21L21.1 21.9L13.6 14.4C12.1 15.6 10.2 16.4 8.20001 16.4C3.70001 16.4 0 12.8 0 8.20001C0 3.70001 3.70001 0 8.29999 0ZM1.20001 8.20001C1.20001 12.1 4.40002 15.2 8.20001 15.2C12.1 15.2 15.2 12.1 15.2 8.20001C15.2 4.30002 12.1 1.20001 8.20001 1.20001C4.30002 1.20001 1.20001 4.40002 1.20001 8.20001Z" fill="#262626"/>
+    </svg>
+    <input type="search" placeholder="Search for restaurant or cuisine">
+    </div>  
 </body>
 </html>
