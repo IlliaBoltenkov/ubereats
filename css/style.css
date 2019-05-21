@@ -435,8 +435,12 @@ footer{
 }
 .button--up{
     position: fixed;
-	bottom: 20px;
+	bottom: -100px;
 	right: 20px;
     opacity: 1;
     cursor: pointer;
+    transition: .4s;
+}
+.button--up.active{
+    bottom: 20px;
 }
