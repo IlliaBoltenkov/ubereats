@@ -189,9 +189,10 @@ option{
 .content{
     width: 90%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap; 
     justify-content: space-around;
     padding-left: 40px;
+    margin-bottom: 30px;
 }
 .content__part{
     display: flex;
@@ -383,7 +384,7 @@ footer{
     list-style-type: none;
 }
 .content__help  li{
-     padding-top: 20px; 
+    padding-top: 20px; 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -443,4 +444,177 @@ footer{
 }
 .button--up.active{
     bottom: 20px;
+}
+.mobile__location{
+    display: none;
+}
+@media(max-width: 768px) {
+    body{
+        background: #F2F2F2;
+    }
+    header{
+        width: 100%;
+        justify-content: space-around;
+        background: #FFFFFF;
+    }
+    .autorization__packet{
+        margin-left: 5px;
+    }
+    .autorization__register{
+        margin-left: 5px;
+        padding: 6px 6px;
+    }
+    .autorization__signin{
+        padding: 7px 7px;
+    }
+    .body__search{
+        width: 95%;
+    }
+    .body_content{
+        width: 100%;
+    }
+    .body_content h1{
+        width: 95%;
+    }
+    .content{
+        width: 100%;
+        padding-left: 0px;
+        justify-content: space-between;
+    }
+    .content__part{
+        width: 47%;
+        margin: 5px 5px 5px 5px;
+    }
+    .arrow{
+        padding-left: 155px;
+    }
+    .footer{
+        width: 97%;
+    }
+    .footer__logo{
+        margin-left: 10px;
+        width: 100%;
+    }
+    .footer__content{
+        margin-left: 10px;
+        width: 100%;
+    }
+    .footer__links{
+        margin-left: 10px;
+        width: 100%;
+    }
+    .footer__end{
+        margin-left: 10px;
+        width: 100%;
+    }
+}
+@media(max-width: 320px) {
+    .time__location{
+        display: none;
+        width: 100%;
+    }
+    .mobile__location{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile__whento{
+        display: flex;
+        flex-direction: row;
+    }
+    .mobile__whento p{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        color: #626262;
+    }
+    .to{
+        margin-left: 50px;
+    }
+    .mobile__time{
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .time{
+        margin-right: 10px;
+    }
+    .autorization{
+        margin-right: 5px;
+    }
+    .autorization__packet{
+        display: none;
+    }
+    .logo img{
+        width: 100%;
+        padding-left: 5px;
+    }
+    .autorization{
+        width: 50%;
+    }
+    .content__part{
+        width: 95%;
+    }
+    .footer{
+        width: 97%;
+    }
+    .footer__logo{
+        margin-left: 5px;
+        width: 100%;
+        margin-right: 5px;
+    }
+    .footer__logo img{
+        width: 70%;
+    }
+    .footer__content{
+        margin-left: 5px;
+        width: 100%;
+        flex-direction: column;
+        margin-right: 5px;
+    }
+    .content__links{
+        width: 95%;
+    }
+    .content__about{
+        width: 95%;
+        justify-content: flex-start;
+    
+    }
+    .content__about ul{
+        padding-inline-start: 0px!important;
+        margin-left: 5px;
+    }
+    .content__help{
+        width: 95%;
+        justify-content: flex-start;
+    }
+    .content__help ul{
+        padding-inline-start: 0px!important;
+        margin-left: 5px;
+    }
+    .footer__links{
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .footer__end{
+        margin-left: 10px;
+        width: 100%;
+    }
+    .content__help  li{
+        padding-bottom: 20px;
+        padding-top: 0px;
+    }
+    .footer__links a{
+        margin-left: 10px;
+    }
+    .footer__end{
+        flex-direction: column;
+    }
+    .language{
+        width: 60%;
+    }
+
 }
